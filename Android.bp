@@ -27,3 +27,15 @@ cc_library_headers {
     ],
     visibility: ["//visibility:public"],
 }
+
+// Display UAPI headers (sde_drm.h, msm_drm_pp.h) from the Motorola
+// display-drivers tree; stands in for the namespaced module in sm8550-modules
+cc_library_headers {
+    name: "qti_display_kernel_headers",
+    vendor: true,
+    recovery_available: true,
+    export_include_dirs: [
+        "../../kernel/motorola/sm8550-modules/qcom/opensource/display-drivers/include/uapi",
+    ],
+    visibility: ["//visibility:public"],
+}
