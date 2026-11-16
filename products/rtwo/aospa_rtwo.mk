@@ -15,22 +15,16 @@ $(call inherit-product, device/motorola/rtwo/device.mk)
 # Inherit from the AOSPA configuration.
 $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
-PRODUCT_BRAND := Nothing
+PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := rtwo
-PRODUCT_MANUFACTURER := Nothing
-PRODUCT_MODEL := A065
+PRODUCT_MANUFACTURER := motorola
+PRODUCT_MODEL := motorola edge 40 pro
 PRODUCT_NAME := aospa_rtwo
 
 # Bootanimation resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Override device name for Play Store.
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DeviceName=Pong \
-    DeviceProduct=Pong \
-    SystemDevice=Pong \
-    SystemName=Pong
 
-PRODUCT_GMS_CLIENTID_BASE := android-nothing
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 endif
